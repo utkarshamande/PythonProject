@@ -1,0 +1,89 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.main-title {
+    font-size: 50px;           /* Bigger size */
+    font-weight: 900;          /* Extra bold */
+    color: #1a1a1a;            /* Dark shade */
+    text-align: center;        /* Center it */
+    margin-bottom: 20px;       /* Space below */
+    font-family: 'Arial Black', sans-serif;
+    text-transform: uppercase; /* Capital letters for strong look */
+    letter-spacing: 2px;       /* Spacing between letters */
+}
+
+
+.add-expense-link a {
+    font-size: 18px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.add-expense-link a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: center;
+    font-size: 16px;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.no-data {
+    color: #777;
+    margin-top: 20px;
+}
+.expense-form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+.form-group input {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
