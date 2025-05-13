@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request, redirect
-from models import db, Expense
 from datetime import datetime
+from models import db, Expense
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///expenses.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
-@app.before_first_request
+@app.before_request
 def create_tables():
     db.create_all()
 
